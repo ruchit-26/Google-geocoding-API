@@ -6,20 +6,6 @@ to clean up some user-entered geographic locations of
 university names and then placing the data on a Google
 Map.
 
-Note: Windows has difficulty in displaying UTF-8 characters
-in the console so for each command window you open, you may need
-to type the following command before running this code:
-
-    chcp 65001
-
-http://stackoverflow.com/questions/388490/unicode-characters-in-windows-command-line-how
-
-
-You should install the SQLite browser to view and modify
-the databases from:
-
-http://sqlitebrowser.org/
-
 The first problem to solve is that the Google geocoding
 API is rate limited to a fixed number of requests per day.
 So if you have a lot of data you might need to stop and
@@ -57,8 +43,7 @@ geoload.py.
 This URL only has a subset of the data but it has no rate limit so
 it is good for testing.
 
-If you want to try this with the API key, follow the
-instructions at:
+We can also follow:-
 
 https://developers.google.com/maps/documentation/geocoding/intro
 
@@ -66,8 +51,6 @@ and put the API key in the code.
 
 Here is a sample run after there is already some data in the
 database:
-
-Mac: python3 geoload.py
 Win: geoload.py
 
 Found in database  Northeastern University
@@ -108,7 +91,6 @@ executable JavaScript code.
 
 A run of the geodump.py program is as follows:
 
-Mac: python3 geodump.py
 Win: geodump.py
 
 Northeastern University, 360 Huntington Avenue, Boston, MA 02115, USA 42.3396998 -71.08975
